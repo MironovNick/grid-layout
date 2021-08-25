@@ -1,0 +1,374 @@
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Front-end test task</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+	</head>
+	<body>
+	
+		<ul class="body_slider">
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	
+		<div id="grid">
+		  <div class="grid_item" id="grid_item_1">
+			<div class="button_panel">
+				<div class="hamburger" onclick="hidden_menuUp()">
+					<div class="vector"></div>
+					<div class="vector"></div>
+					<div class="vector"></div>
+				</div>
+				<button class="button_search" onclick="search_tableUp()"><i class="fas fa-search" id="mob_search_button"></i></button>
+			</div>
+			<div class="logo"><img id="logo" src="css/images/logo.png" alt="logo"></div>
+		  </div>
+		  <div class="grid_item" id="grid_item_2">
+			<nav>
+				<ul id="navbar">
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Каталог</a></li>
+					<li><a href="#">Проекты</a></li>
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
+		  </div>
+		  <div class="grid_item" id="grid_item_3">
+			<div class="buttons_bar">
+				<button class="search" onclick="search_tableUp()"><i class="fas fa-search" id="search_button"></i></button>
+				<div class="hamburger" onclick="hidden_menuUp()">
+					<div class="vector"></div>
+					<div class="vector"></div>
+					<div class="vector"></div>
+				</div>
+			</div>
+		  </div>
+		  <div class="grid_item">
+			<h2>Электроника</h2>
+			<div class="inner_block_blue" onmouseenter="opacityUp(event)" onmouseleave="opacityDn(event)">
+				<div class="inner_text">
+					<p><a href="#">Электроника</a></p>
+					<div class="inner_text2">
+						<p><a href="#" id="int">интеграл</a></p>
+						<p><a href="#">электрод</a></p>
+					</div>
+				</div>
+				<div class="block_image">
+					<img src="css/images/power.png" alt="power">
+				</div>
+				<div class="inner_text_mob">
+					<p><a href="#">Электроника</a></p>
+					<div class="inner_text2_mob">
+						<p><a href="#">интеграл</a></p>
+						<p><a href="#">электрод</a></p>
+					</div>
+				</div>
+			</div>
+		  </div>
+		  <div class="grid_item">
+			<h2>Компьютеры и сети</h2>
+			<div class="inner_block_red" onmouseenter="opacityUp(event)" onmouseleave="opacityDn(event)">
+				<div class="inner_text">
+					<p><a href="#">Компьютеры и сети</a></p>
+					<div class="inner_text2">
+						<p><a href="#">acer</a></p>
+						<p><a href="#">hp</a></p>
+					</div>
+				</div>
+				<div class="block_image">
+					<img src="css/images/battery.png" alt="battery">
+				</div>
+				<div class="inner_text_mob">
+					<p><a href="#">Компьютеры и сети</a></p>
+					<div class="inner_text2_mob">
+						<p><a href="#">acer</a></p>
+						<p><a href="#">hp</a></p>
+					</div>
+				</div>
+			</div>
+		  </div>
+		  <div class="grid_item">
+			<h2>Бытовая техника</h2>
+			<div class="inner_block_blue" onmouseenter="opacityUp(event)" onmouseleave="opacityDn(event)">
+				<div class="inner_text">
+					<p><a href="#">Бытовая техника</a></p>
+					<div class="inner_text2">
+						<p><a href="#">samsung</a></p>
+					</div>
+				</div>
+				<div class="block_image">
+					<img src="css/images/generator.png" alt="generator">
+				</div>
+				<div class="inner_text_mob">
+					<p><a href="#">Бытовая техника</a></p>
+					<div class="inner_text2_mob">
+						<p><a href="#">samsung</a></p>
+					</div>
+				</div>
+			</div>
+		  </div>
+		  <div class="grid_item">
+			<h2>Стройка и ремонт</h2>
+			<div class="inner_block_red" onmouseenter="opacityUp(event)" onmouseleave="opacityDn(event)">
+				<div class="inner_text">
+					<p><a href="#">Стройка и ремонт</a></p>
+					<div class="inner_text2">
+						<p><a href="#">акрил</a></p>
+					</div>
+				</div>
+				<div class="block_image">
+					<img src="css/images/power2.png" alt="power2">
+				</div>
+				<div class="inner_text_mob">
+					<p><a href="#">Стройка и ремонт</a></p>
+					<div class="inner_text2_mob">
+						<p><a href="#">акрил</a></p>
+					</div>
+				</div>
+			</div>
+		  </div>
+		  <div class="grid_item">
+			<h2>Дом и сад</h2>
+			<div class="inner_block_blue" onmouseenter="opacityUp(event)" onmouseleave="opacityDn(event)">
+				<div class="inner_text">
+					<p><a href="#">Дом и сад</a></p>
+					<div class="inner_text2">
+						<p><a href="#">алмаз</a></p>
+						<p><a href="#">bosch</a></p>
+					</div>
+				</div>
+				<div class="block_image">
+					<img src="css/images/airbrush.png" alt="airbrush">
+				</div>
+				<div class="inner_text_mob">
+					<p><a href="#">Дом и сад</a></p>
+					<div class="inner_text2_mob">
+						<p><a href="#">алмаз</a></p>
+						<p><a href="#">bosch</a></p>
+					</div>
+				</div>
+			</div>
+		  </div>
+		  <div class="grid_item">
+			<h2>Авто и мото</h2>
+			<div class="inner_block_red" onmouseenter="opacityUp(event)" onmouseleave="opacityDn(event)">
+				<div class="inner_text">
+					<p><a href="#">Авто и мото</a></p>
+				</div>
+				<div class="block_image">
+					<img src="css/images/tools.png" alt="tools">
+				</div>
+				<div class="inner_text_mob">
+					<p><a href="#">Авто и мото</a></p>
+				</div>
+			</div>
+		  </div>
+		  <div class="grid_item" id="grid_item_10"><p><a href="#">Каталог &#169;</a></p></div>
+		  <div class="grid_item" id="grid_item_11"></div>
+		  <div class="grid_item" id="grid_item_12"><p><a href="#">Разработка сайта</a></p></div>
+		  
+			<footer>  
+			  <div id="button_up_div" onclick="scrollToTop(300,3)">
+				<button id="button_up"><i class="fas fa-chevron-up"></i></button>
+				<h3>наверх</h3>
+			  </div>
+			  <div id="credits">
+				<p><a href="#">Каталог &#169;</a></p>
+				<p><a href="#">Разработка сайта</a></p>
+			  </div>
+			</footer>
+			
+		</div>
+
+		
+		
+		<div class="hidden_menu">
+			<button class="close_button" onclick="hidden_menuDn()">&#10006;</button>
+			<nav class="hidden_menu_list">
+				<ul id="menu">
+					<li><a href="#" class="current_window">Главная</a></li>
+					<li><a href="#" class="li_item">Каталог</a></li>
+					<li><a href="#" class="li_item">Проекты</a></li>
+					<li><a href="#" class="li_item">О компании</a></li>
+					<li><a href="#" class="li_item">Контакты</a></li>
+				</ul>
+			</nav>		
+		</div>
+		
+		<div class="search_table">
+			<button class="close_button " id="search_table_close_button"  onclick="search_tableDn()">&#10006;</button>
+			<form>
+				<div class="main"><input type="search" placeholder="Поиск"></div>
+				<div class="bottom">
+					<div class="search_table_button"><div class="search_icon"><i class="fas fa-search"></i></div><input type="submit" value="Найти"></div>
+				</div>
+			</form>
+		</div>
+		
+	<script>
+	
+	var id = 0;
+	function opacityUp(e) {
+		if( screen.availWidth < 768 )
+			return;
+		
+		var opacity =  0.05;
+		id = setInterval(opacityInc, 25);
+		function opacityInc() {
+			e.target.style.opacity = opacity;
+			if( opacity < 1 )
+				opacity += 0.05;
+			else {
+				clearInterval(id);
+				id = 0;
+			}
+		
+		}
+	}
+
+	function opacityDn(e) {
+		if( screen.availWidth < 768 )
+			return;
+		if(id) {
+			clearInterval(id);
+			id = 0;
+		}
+		e.target.style.opacity = 0;
+	}
+
+	var hidden_menuOn_id = 0;
+
+	function hidden_menuOn(On){
+		var elem = document.getElementsByClassName("hidden_menu")[0];
+		var right = 0;
+		if(On) {
+			elem.style.right = "0%";
+			elem.style.display = "block";
+			
+		} else {
+			elem.style.right = "-34%";
+			elem.style.display = "none";
+		}
+	}
+
+	function hidden_menuUp(){
+		var elem = document.getElementsByClassName("hidden_menu")[0];
+		var right_ = -34;
+		if( screen.availWidth < 768 )
+			right_ = -100;
+		elem.style.display = "block";
+		var id = setInterval(hidden_menuInc, 5);
+		function hidden_menuInc() {
+			elem.style.right = right_ + "%";
+			if( right_ < 0 )
+				right_ += 1;
+			else {
+				
+				clearInterval(id);
+				id = 0;
+			}
+		}
+	}
+
+	function hidden_menuDn() {
+		var elem = document.getElementsByClassName("hidden_menu")[0];
+		var right_ = 0;
+		var min_ = -34;
+		if( screen.availWidth < 768 )
+			min_ = -100;
+		var id = setInterval(hidden_menuDec, 5);
+		function hidden_menuDec() {
+			elem.style.right = right_ + "%";
+			if( right_ > min_ )
+				right_ -= 1;
+			else {
+				elem.style.display = "none"
+				clearInterval(id);
+				id = 0;
+			}
+		
+		}
+	}
+
+	function search_tableUp() {
+		var elem = document.getElementsByClassName("search_table")[0];
+		var left_ = -100;
+		
+		elem.style.opacity = 1;
+		var id = setInterval(search_tableInc, 5);
+		function search_tableInc() {
+			elem.style.left = left_ + "%";
+			if( left_ < 0 )
+				left_ += 1;
+			else {
+				
+				clearInterval(id);
+				id = 0;
+			}
+		
+		}
+	}
+
+	function search_tableDn() {
+		var elem = document.getElementsByClassName("search_table")[0];
+		var left_ = 0;
+		var min_ = -100;
+		var id = setInterval(search_tableDec, 5);
+		function search_tableDec() {
+			elem.style.left = left_ + "%";
+			if( left_ > min_ )
+				left_ -= 1;
+			else {
+				elem.style.opacity = 0;
+				clearInterval(id);
+				id = 0;
+			}
+		
+		}
+	}
+
+	window.onload=function(){
+		html = document.documentElement;
+		body = document.body;
+		button_up_div = document.getElementById("button_up_div")
+	};
+
+	var html, body, button_up_div;
+
+	function scrollToTop(totalTime, easingPower) {
+	  var timeInterval = 1; 
+	  var scrollTop = Math.round(body.scrollTop || html.scrollTop);
+	  var timeLeft = totalTime;
+	  var scrollByPixel = setInterval(function() {
+		var percentSpent = (totalTime - timeLeft) / totalTime;
+		if (timeLeft >= 0) {
+		  var newScrollTop = scrollTop * (1 - easeInOut(percentSpent, easingPower));
+		  body.scrollTop = newScrollTop;
+		  html.scrollTop = newScrollTop;
+		  timeLeft--;
+		} else {
+		  clearInterval(scrollByPixel);
+		}
+	  }, timeInterval);
+	}
+
+	function easeInOut(t, power){
+		if(t < 0.5){
+			return 0.5*Math.pow(2*t,power);
+		}
+		else{
+			return 0.5*(2 - Math.pow(2*(1-t), power));
+		}
+	}
+
+	</script>	
+
+	</body>
+</html>
